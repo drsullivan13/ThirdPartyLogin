@@ -85,7 +85,6 @@
       <change beforePath="" afterPath="$PROJECT_DIR$/../spring/target/maven-archiver/pom.properties" />
       <change beforePath="" afterPath="$PROJECT_DIR$/../spring/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
       <change beforePath="" afterPath="$PROJECT_DIR$/../spring/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change beforePath="" afterPath="$PROJECT_DIR$/../tutorial/.idea/jsLibraryMappings.xml" />
       <change beforePath="" afterPath="$PROJECT_DIR$/../tutorial/.idea/misc.xml" />
       <change beforePath="" afterPath="$PROJECT_DIR$/../tutorial/.idea/modules.xml" />
@@ -1077,7 +1076,6 @@
       <change beforePath="" afterPath="$PROJECT_DIR$/../tutorial/views/index.jade" />
       <change beforePath="" afterPath="$PROJECT_DIR$/../tutorial/views/layout.jade" />
       <change beforePath="$PROJECT_DIR$/../dansullivan/src/styles/NavBar.css" afterPath="$PROJECT_DIR$/../dansullivan/src/styles/NavBar.css" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -1385,12 +1383,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528760227624</updated>
-      <workItem from="1528760228976" duration="1464000" />
+      <workItem from="1528760228976" duration="1939000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1464000" />
+    <option name="totallyTimeSpent" value="1939000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="803" extended-state="0" />
