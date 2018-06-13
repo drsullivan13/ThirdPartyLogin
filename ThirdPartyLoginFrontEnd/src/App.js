@@ -20,6 +20,15 @@ class App extends Component {
     twitterResponse = (response) => {};
 
     facebookResponse = (response) => {
+        axios.post('http://localhost:8080', {
+            response: response,
+        })
+            .then(function (response) {
+                console.log(response);
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
         console.log(response);
     };
 
