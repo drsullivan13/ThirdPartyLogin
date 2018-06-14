@@ -3,6 +3,7 @@ import TwitterLogin from 'react-twitter-auth';
 import FacebookLogin from 'react-facebook-login';
 import { GoogleLogin } from 'react-google-login';
 import config from './config.json';
+import axios from 'axios'
 
 class App extends Component {
 
@@ -19,15 +20,26 @@ class App extends Component {
     };
     twitterResponse = (response) => {};
 
+
+
     facebookResponse = (response) => {
-        axios.post('http://localhost:8080', {
-            response: response,
-        })
+        let authOptions = {
+            method: 'POST',
+            url: 'https://localhost:8080',
+            data: {response: response},
+            headers: {
+                'Access-Control-Allow-Origin': 'http://localhost:3000',
+                'Access-Control-Allow-Credentials': 'true'
+            },
+            json: true
+        }
+
+        axios(authOptions)
             .then(function (response) {
                 console.log(response);
             })
             .catch(function (error) {
-                console.log(error);
+                console.log(error.response);
             });
         console.log(response);
     };
