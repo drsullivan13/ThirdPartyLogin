@@ -1,52 +1,51 @@
-import React, { Component } from 'react';
-import TwitterLogin from 'react-twitter-auth';
-import FacebookLogin from 'react-facebook-login';
-import { GoogleLogin } from 'react-google-login';
-import config from './config.json';
+import React, { Component } from 'react'
+import TwitterLogin from 'react-twitter-auth'
+import FacebookLogin from 'react-facebook-login'
+import { GoogleLogin } from 'react-google-login'
+import config from './config.json'
 import axios from 'axios'
 
 class App extends Component {
 
     constructor() {
-        super();
-        this.state = { isAuthenticated: false, user: null, token:                ''};
+        super()
+        this.state = { isAuthenticated: false, user: null, token:                ''}
     }
 
     logout = () => {
         this.setState({isAuthenticated: false, token: '', user:    null})
-    };
+    }
     onFailure = (error) => {
-        alert(error);
-    };
-    twitterResponse = (response) => {};
+        alert(error)
+    }
+    twitterResponse = (response) => {}
 
+    handleFacebookResponse = (response) => {
 
-
-    facebookResponse = (response) => {
-        let authOptions = {
-            method: 'POST',
-            url: 'https://localhost:8080',
-            data: {response: response},
-            headers: {
-                'Access-Control-Allow-Origin': 'http://localhost:3000',
-                'Access-Control-Allow-Credentials': 'true'
-            },
-            json: true
+        let userInformation = {
+            name: response['name'],
+            email: response['email']
         }
 
-        axios(authOptions)
+
+        this.facebookResponse(userInformation)
+    }
+
+    facebookResponse = (response) => {
+        axios.post('http://localhost:8080/', response)
             .then(function (response) {
-                console.log(response);
+                console.log(response)
             })
             .catch(function (error) {
-                console.log(error.response);
-            });
-        console.log(response);
-    };
+                console.log(error)
+            })
+
+        console.log(response)
+    }
 
     googleResponse = (response) => {
-        console.log(response);
-    };
+        console.log(response)
+    }
 
     render() {
         let content = !!this.state.isAuthenticated ?
@@ -65,14 +64,11 @@ class App extends Component {
             ) :
             (
                 <div>
-                    <TwitterLogin loginUrl="http://localhost:4000/api/v1/auth/twitter"
-                                  onFailure={this.onFailure} onSuccess={this.twitterResponse}
-                                  requestTokenUrl="http://localhost:4000/api/v1/auth/twitter/reverse"/>
                     <FacebookLogin
                         appId={config.FACEBOOK_APP_ID}
                         autoLoad={false}
                         fields="name,email,picture"
-                        callback={this.facebookResponse} />
+                        callback={this.handleFacebookResponse} />
                     <GoogleLogin
                         clientId={config.GOOGLE_CLIENT_ID}
                         buttonText="Login"
@@ -80,14 +76,14 @@ class App extends Component {
                         onFailure={this.onFailure}
                     />
                 </div>
-            );
+            )
 
         return (
             <div className="App">
                 {content}
             </div>
-        );
+        )
     }
 }
 
-export default App;
+export default App

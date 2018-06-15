@@ -12,10 +12,10 @@ public class ThirdPartyLoginBackendController {
     private final Log log = LogFactory.getLog(RestController.class);
 
     @RequestMapping(method = RequestMethod.POST)
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin("http://localhost:3000")
     public @ResponseBody String loginInformation(@RequestBody String response) {
         log.info("HERE");
-        log.info(response.getClass());
+        log.info(response);
         return "MADE IT";
     }
 
