@@ -18,20 +18,21 @@ class App extends Component {
     onFailure = (error) => {
         alert(error)
     }
-    twitterResponse = (response) => {}
+    userInformation = {
+        name: "",
+        email: ""
+    }
 
     handleFacebookResponse = (response) => {
 
-        let userInformation = {
-            name: response['name'],
-            email: response['email']
-        }
+        this.userInformation.name = response['name']
+        this.userInformation.email = response['email']
 
 
-        this.facebookResponse(userInformation)
+        this.responseSender(this.userInformation)
     }
 
-    facebookResponse = (response) => {
+    responseSender = (response) => {
         axios.post('http://localhost:8080/', response)
             .then(function (response) {
                 console.log(response)
@@ -44,7 +45,12 @@ class App extends Component {
     }
 
     googleResponse = (response) => {
-        console.log(response)
+
+        this.userInformation.name = response['profileObj']['name']
+        this.userInformation.email = response['profileObj']['email']
+
+
+        this.responseSender(this.userInformation)
     }
 
     render() {

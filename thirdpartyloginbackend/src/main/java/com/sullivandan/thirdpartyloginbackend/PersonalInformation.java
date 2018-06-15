@@ -1,10 +1,13 @@
 package com.sullivandan.thirdpartyloginbackend;
 
+import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.stereotype.Component;
 
 @Component
+@Document(collection = "users")
 public class PersonalInformation {
 
+    private String id;
     private String name;
     private String email;
 
@@ -22,5 +25,13 @@ public class PersonalInformation {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }
