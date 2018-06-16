@@ -4,7 +4,9 @@ import { GoogleLogin } from 'react-google-login'
 import config from './config.json'
 import axios from 'axios'
 import 'semantic-ui-css/semantic.min.css'
-import {Form, Segment, Grid} from "semantic-ui-react";
+import {Form, Segment, Grid, Message} from "semantic-ui-react";
+import {BrowserRouter, Route, Switch} from "react-router-dom";
+import Login from "./Login";
 
 class App extends Component {
 
@@ -43,6 +45,8 @@ class App extends Component {
         this.setState({userInformation: {name: response['profileObj']['name'], email: response['profileObj']['email']}})
 
         this.responseSender()
+
+        return <Message success header='Form Completed' content="You're all signed up for the newsletter" />
     }
 
     render() {
@@ -90,6 +94,16 @@ class App extends Component {
                         </Segment>
                     </Grid.Row>
                 </Grid>
+
+                <div>
+                    <BrowserRouter>
+                            <Switch>
+                                <Route exact path="/" component={App} />
+                                <Route path="/login" component={Login} />
+                            </Switch>
+                    </BrowserRouter>
+                </div>
+
             </div>
         )
     }
