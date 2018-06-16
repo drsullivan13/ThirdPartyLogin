@@ -9,7 +9,9 @@
     "react-facebook-login": "^4.0.1",
     "react-google-login": "^3.2.1",
     "react-scripts": "^1.1.4",
-    "react-twitter-auth": "0.0.12"
+    "react-twitter-auth": "0.0.12",
+    "semantic-ui-css": "^2.3.1",
+    "semantic-ui-react": "^0.81.1"
   },
   "scripts": {
     "start": "react-scripts start",

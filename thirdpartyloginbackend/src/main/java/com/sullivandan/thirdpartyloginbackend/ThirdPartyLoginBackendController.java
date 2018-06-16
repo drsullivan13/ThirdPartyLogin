@@ -33,15 +33,10 @@ public class ThirdPartyLoginBackendController {
 
             //convert JSON string to Map
             map = mapper.readValue(String.valueOf(response), new TypeReference<Map<String, Object>>() {} );
-//            PersonalInformation personalInformation = new PersonalInformation(map.get("name").toString(), map.get("email").toString());
             personalInformation.setEmail(map.get("email").toString());
             personalInformation.setName(map.get("name").toString());
 
             userRepository.save(personalInformation);
-
-//            for (PersonalInformation user : userRepository.findAll()) {
-//                log.info("DB STUFF" + user);
-//            }
         } catch (Exception e) {
             e.printStackTrace();
             return null;

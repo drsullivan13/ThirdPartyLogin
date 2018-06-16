@@ -1,15 +1,16 @@
 import React, { Component } from 'react'
-import TwitterLogin from 'react-twitter-auth'
 import FacebookLogin from 'react-facebook-login'
 import { GoogleLogin } from 'react-google-login'
 import config from './config.json'
 import axios from 'axios'
+import 'semantic-ui-css/semantic.min.css'
+import {Form, Segment} from "semantic-ui-react";
 
 class App extends Component {
 
     constructor() {
         super()
-        this.state = { isAuthenticated: false, user: null, token:                ''}
+        this.state = { isAuthenticated: false, user: null, token:'', userInformation: {name: "", email: ""}}
     }
 
     logout = () => {
@@ -18,22 +19,15 @@ class App extends Component {
     onFailure = (error) => {
         alert(error)
     }
-    userInformation = {
-        name: "",
-        email: ""
-    }
+
 
     handleFacebookResponse = (response) => {
-
-        this.userInformation.name = response['name']
-        this.userInformation.email = response['email']
-
-
-        this.responseSender(this.userInformation)
+        this.setState({userInformation: {name: response['name'], email: response['email']}})
+        this.responseSender()
     }
 
-    responseSender = (response) => {
-        axios.post('http://localhost:8080/', response)
+    responseSender = () => {
+        axios.post('http://localhost:8080/', this.state.userInformation)
             .then(function (response) {
                 console.log(response)
             })
@@ -41,16 +35,14 @@ class App extends Component {
                 console.log(error)
             })
 
-        console.log(response)
+        console.log(this.state.userInformation)
     }
 
     googleResponse = (response) => {
 
-        this.userInformation.name = response['profileObj']['name']
-        this.userInformation.email = response['profileObj']['email']
+        this.setState({userInformation: {name: response['profileObj']['name'], email: response['profileObj']['email']}})
 
-
-        this.responseSender(this.userInformation)
+        this.responseSender()
     }
 
     render() {
@@ -86,7 +78,15 @@ class App extends Component {
 
         return (
             <div className="App">
-                {content}
+                <Segment>
+                    <Form>
+
+                        <Form.Input fluid label='Name' placeholder='John Smith' />
+                        <Form.Input fluid label='Email' placeholder='johnsmith@email.com' />
+                    </Form>
+
+                    {content}
+                </Segment>
             </div>
         )
     }
