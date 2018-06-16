@@ -4,21 +4,17 @@ import { GoogleLogin } from 'react-google-login'
 import config from './config.json'
 import axios from 'axios'
 import 'semantic-ui-css/semantic.min.css'
-import {Form, Segment, Grid, Message} from "semantic-ui-react";
-import {BrowserRouter, Route, Switch} from "react-router-dom";
+import {Form, Segment, Grid} from "semantic-ui-react";
 
 class Login extends Component {
 
     constructor() {
         super()
-        this.state = { isAuthenticated: false, user: null, token:'', userInformation: {name: "", email: ""}}
+        this.state = {userInformation: {name: "", email: ""}}
     }
 
-    logout = () => {
-        this.setState({isAuthenticated: false, token: '', user:    null})
-    }
     onFailure = (error) => {
-        alert(error)
+        this.props.history.push('/LoginError')
     }
 
 
@@ -50,20 +46,7 @@ class Login extends Component {
     }
 
     render() {
-        let content = !!this.state.isAuthenticated ?
-            (
-                <div>
-                    <p>Authenticated</p>
-                    <div>
-                        {this.state.user.email}
-                    </div>
-                    <div>
-                        <button onClick={this.logout} className="button">
-                            Log out
-                        </button>
-                    </div>
-                </div>
-            ) :
+        let content =
             (
                 <div>
                     <FacebookLogin
@@ -79,13 +62,12 @@ class Login extends Component {
                     />
                 </div>
             )
-        const square = {width: 550, height: 250}
 
         return (
             <div className="App">
                 <Grid>
                     <Grid.Row centered>
-                        <Segment style={square}>
+                        <Segment style={{width: 550, height: 250}}>
                             <Form>
                                 <Form.Input fluid label='Name' placeholder='John Smith' />
                                 <Form.Input fluid label='Email' placeholder='johnsmith@email.com' style={{paddingBottom:15}}/>

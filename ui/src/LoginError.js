@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {Button, Message} from "semantic-ui-react";
 
-class Home extends Component{
+class LoginError extends Component{
 
     handleClick = () => {
         this.props.history.push('/')
@@ -11,9 +11,9 @@ class Home extends Component{
 
         return (
             <div>
-                <Message success header='Login Successful' content="You have successfully signed in with third party!" />
+                <Message error header='Login Unsuccessful' content="There was an error during attempted third party login. Please try again" />
                 <Button
-                    content="Logout"
+                    content="Back to Login"
                     onClick={this.handleClick}
                 />
             </div>
@@ -22,4 +22,4 @@ class Home extends Component{
     }
 }
 
-export default Home
+export default LoginError

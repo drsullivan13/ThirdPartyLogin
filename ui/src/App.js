@@ -4,6 +4,7 @@ import {Container} from "semantic-ui-react"
 import {BrowserRouter, Route, Switch} from "react-router-dom"
 import Login from "./Login"
 import Home from "./Home"
+import LoginError from "./LoginError";
 
 class App extends Component {
 
@@ -16,6 +17,7 @@ class App extends Component {
                         <Switch>
                             <Route exact path="/" component={Login} />
                             <Route path="/home" component={Home} />
+                            <Route path="/LoginError" component={LoginError} />
                         </Switch>
                     </Container>
                 </BrowserRouter>
