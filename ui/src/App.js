@@ -1,8 +1,4 @@
 import React, { Component } from 'react'
-import FacebookLogin from 'react-facebook-login'
-import { GoogleLogin } from 'react-google-login'
-import config from './config.json'
-import axios from 'axios'
 import 'semantic-ui-css/semantic.min.css'
 import {Container} from "semantic-ui-react"
 import {BrowserRouter, Route, Switch} from "react-router-dom"
@@ -11,10 +7,7 @@ import Home from "./Home"
 
 class App extends Component {
 
-
-
     render() {
-
 
         return (
             <div>
