@@ -4,7 +4,7 @@ import { GoogleLogin } from 'react-google-login'
 import config from './config.json'
 import axios from 'axios'
 import 'semantic-ui-css/semantic.min.css'
-import {Form, Segment} from "semantic-ui-react";
+import {Form, Segment, Grid} from "semantic-ui-react";
 
 class App extends Component {
 
@@ -75,18 +75,21 @@ class App extends Component {
                     />
                 </div>
             )
+        const square = {width: 550, height: 250}
 
         return (
             <div className="App">
-                <Segment>
-                    <Form>
-
-                        <Form.Input fluid label='Name' placeholder='John Smith' />
-                        <Form.Input fluid label='Email' placeholder='johnsmith@email.com' />
-                    </Form>
-
-                    {content}
-                </Segment>
+                <Grid>
+                    <Grid.Row centered>
+                        <Segment style={square}>
+                            <Form>
+                                <Form.Input fluid label='Name' placeholder='John Smith' />
+                                <Form.Input fluid label='Email' placeholder='johnsmith@email.com' style={{paddingBottom:15}}/>
+                            </Form>
+                            {content}
+                        </Segment>
+                    </Grid.Row>
+                </Grid>
             </div>
         )
     }
