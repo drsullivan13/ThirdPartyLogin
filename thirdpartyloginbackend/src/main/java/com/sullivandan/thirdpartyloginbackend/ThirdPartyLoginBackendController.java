@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
@@ -16,22 +17,31 @@ import java.util.Map;
 @Controller
 public class ThirdPartyLoginBackendController {
 
+    @Autowired
+    UserRepository userRepository;
 
+    @Autowired
+    PersonalInformation personalInformation;
     private final Log log = LogFactory.getLog(RestController.class);
 
     @RequestMapping(method = RequestMethod.POST)
     @CrossOrigin("http://localhost:3000")
     public @ResponseBody String loginInformation(@RequestBody String response) {
-        PersonalInformation personalInformation = new PersonalInformation();
         Map<String,Object> map = new HashMap<String,Object>();
         ObjectMapper mapper = new ObjectMapper();
         try {
+
             //convert JSON string to Map
             map = mapper.readValue(String.valueOf(response), new TypeReference<Map<String, Object>>() {} );
-            personalInformation.setName(map.get("name").toString());
+//            PersonalInformation personalInformation = new PersonalInformation(map.get("name").toString(), map.get("email").toString());
             personalInformation.setEmail(map.get("email").toString());
+            personalInformation.setName(map.get("name").toString());
 
-//            userMongoRepository.save(personalInformation);
+            userRepository.save(personalInformation);
+
+//            for (PersonalInformation user : userRepository.findAll()) {
+//                log.info("DB STUFF" + user);
+//            }
         } catch (Exception e) {
             e.printStackTrace();
             return null;

@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17154acc-e32a-4459-82a6-94762161e10b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_bson_3_6_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_3_6_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_core_3_6_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_mongodb_2_0_2_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_0_7_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_mongodb_2_0_7_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_0_6_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/thirdpartyloginbackend/src/main/java/com/sullivandan/thirdpartyloginbackend/UserRepository.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/ThirdPartyLoginFrontEnd/src/App.js" afterPath="$PROJECT_DIR$/ThirdPartyLoginFrontEnd/src/App.js" />
-      <change beforePath="$PROJECT_DIR$/thirdpartyloginbackend/pom.xml" afterPath="$PROJECT_DIR$/thirdpartyloginbackend/pom.xml" />
       <change beforePath="$PROJECT_DIR$/thirdpartyloginbackend/src/main/java/com/sullivandan/thirdpartyloginbackend/PersonalInformation.java" afterPath="$PROJECT_DIR$/thirdpartyloginbackend/src/main/java/com/sullivandan/thirdpartyloginbackend/PersonalInformation.java" />
       <change beforePath="$PROJECT_DIR$/thirdpartyloginbackend/src/main/java/com/sullivandan/thirdpartyloginbackend/ThirdPartyLoginBackendApplication.java" afterPath="$PROJECT_DIR$/thirdpartyloginbackend/src/main/java/com/sullivandan/thirdpartyloginbackend/ThirdPartyLoginBackendApplication.java" />
       <change beforePath="$PROJECT_DIR$/thirdpartyloginbackend/src/main/java/com/sullivandan/thirdpartyloginbackend/ThirdPartyLoginBackendController.java" afterPath="$PROJECT_DIR$/thirdpartyloginbackend/src/main/java/com/sullivandan/thirdpartyloginbackend/ThirdPartyLoginBackendController.java" />
+      <change beforePath="$PROJECT_DIR$/thirdpartyloginbackend/src/main/java/com/sullivandan/thirdpartyloginbackend/UserRepository.java" afterPath="$PROJECT_DIR$/thirdpartyloginbackend/src/main/java/com/sullivandan/thirdpartyloginbackend/UserRepository.java" />
       <change beforePath="$PROJECT_DIR$/thirdpartyloginbackend/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/thirdpartyloginbackend/src/main/resources/application.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/thirdpartyloginbackend/target/" />
@@ -28,37 +19,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ThirdPartyLoginFrontEnd/src/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="52" column="49" lean-forward="false" selection-start-line="52" selection-start-column="49" selection-end-line="52" selection-end-column="49" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ThirdPartyLoginBackendController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ThirdPartyLoginBackendController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/thirdpartyloginbackend/src/main/java/com/sullivandan/thirdpartyloginbackend/ThirdPartyLoginBackendController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="252">
+              <caret line="42" column="38" lean-forward="false" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#942#957#0" expanded="true" />
+                <element signature="e#1036#1051#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/thirdpartyloginbackend/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="30" lean-forward="false" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -73,11 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserRepository.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserRepository.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/thirdpartyloginbackend/src/main/java/com/sullivandan/thirdpartyloginbackend/UserRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+            <state relative-caret-position="150">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -88,22 +57,22 @@
       <file leaf-file-name="PersonalInformation.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/thirdpartyloginbackend/src/main/java/com/sullivandan/thirdpartyloginbackend/PersonalInformation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+            <state relative-caret-position="117">
+              <caret line="19" column="7" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="19" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#344#345#0" expanded="true" />
-                <element signature="e#371#372#0" expanded="true" />
-                <element signature="e#411#412#0" expanded="true" />
-                <element signature="e#443#444#0" expanded="true" />
-                <element signature="e#475#476#0" expanded="true" />
-                <element signature="e#503#504#0" expanded="true" />
-                <element signature="e#545#546#0" expanded="true" />
                 <element signature="e#579#580#0" expanded="true" />
-                <element signature="e#608#609#0" expanded="true" />
-                <element signature="e#633#634#0" expanded="true" />
-                <element signature="e#669#670#0" expanded="true" />
-                <element signature="e#697#698#0" expanded="true" />
+                <element signature="e#611#612#0" expanded="true" />
+                <element signature="e#651#652#0" expanded="true" />
+                <element signature="e#683#684#0" expanded="true" />
+                <element signature="e#715#716#0" expanded="true" />
+                <element signature="e#748#749#0" expanded="true" />
+                <element signature="e#790#791#0" expanded="true" />
+                <element signature="e#824#825#0" expanded="true" />
+                <element signature="e#853#854#0" expanded="true" />
+                <element signature="e#878#879#0" expanded="true" />
+                <element signature="e#914#915#0" expanded="true" />
+                <element signature="e#942#943#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -112,12 +81,12 @@
       <file leaf-file-name="ThirdPartyLoginBackendApplication.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/thirdpartyloginbackend/src/main/java/com/sullivandan/thirdpartyloginbackend/ThirdPartyLoginBackendApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+            <state relative-caret-position="130">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#515#516#0" expanded="true" />
-                <element signature="e#590#591#0" expanded="true" />
+                <element signature="e#883#884#0" expanded="true" />
+                <element signature="e#958#959#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -159,14 +128,14 @@
         <option value="$PROJECT_DIR$/ThirdPartyLoginFrontEnd/src/App.js" />
         <option value="$PROJECT_DIR$/thirdpartyloginbackend/src/main/java/com/sullivandan/thirdpartyloginbackend/MongoConfig.java" />
         <option value="$PROJECT_DIR$/thirdpartyloginbackend/src/main/java/com/sullivandan/thirdpartyloginbackend/MongoXMLConfig.xml" />
-        <option value="$PROJECT_DIR$/thirdpartyloginbackend/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/thirdpartyloginbackend/src/main/java/com/sullivandan/thirdpartyloginbackend/PersonalInformation.java" />
         <option value="$PROJECT_DIR$/thirdpartyloginbackend/src/main/java/com/sullivandan/thirdpartyloginbackend/respository/UserMongoRepository.java" />
-        <option value="$PROJECT_DIR$/thirdpartyloginbackend/src/main/java/com/sullivandan/thirdpartyloginbackend/ThirdPartyLoginBackendApplication.java" />
         <option value="$PROJECT_DIR$/thirdpartyloginbackend/src/main/java/com/sullivandan/thirdpartyloginbackend/MongoInstance.java" />
-        <option value="$PROJECT_DIR$/thirdpartyloginbackend/src/main/java/com/sullivandan/thirdpartyloginbackend/ThirdPartyLoginBackendController.java" />
         <option value="$PROJECT_DIR$/thirdpartyloginbackend/pom.xml" />
+        <option value="$PROJECT_DIR$/thirdpartyloginbackend/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/thirdpartyloginbackend/src/main/java/com/sullivandan/thirdpartyloginbackend/UserRepository.java" />
+        <option value="$PROJECT_DIR$/thirdpartyloginbackend/src/main/java/com/sullivandan/thirdpartyloginbackend/ThirdPartyLoginBackendApplication.java" />
+        <option value="$PROJECT_DIR$/thirdpartyloginbackend/src/main/java/com/sullivandan/thirdpartyloginbackend/PersonalInformation.java" />
+        <option value="$PROJECT_DIR$/thirdpartyloginbackend/src/main/java/com/sullivandan/thirdpartyloginbackend/ThirdPartyLoginBackendController.java" />
       </list>
     </option>
   </component>
@@ -458,7 +427,7 @@
       <workItem from="1528927927736" duration="5116000" />
       <workItem from="1528934864654" duration="5887000" />
       <workItem from="1529021918077" duration="3216000" />
-      <workItem from="1529094429129" duration="6306000" />
+      <workItem from="1529094429129" duration="8303000" />
     </task>
     <task id="LOCAL-00001" summary="Added controller and ability to receive a post request">
       <created>1528932350792</created>
@@ -476,7 +445,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20548000" />
+    <option name="totallyTimeSpent" value="22545000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -499,11 +468,11 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25608012" sideWeight="0.29076087" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40266022" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25608012" sideWeight="0.29341316" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5961306" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5550181" sideWeight="0.49713877" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25608012" sideWeight="0.7092391" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37726724" sideWeight="0.49713877" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25608012" sideWeight="0.70658684" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24749643" sideWeight="0.24346076" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -549,7 +518,7 @@
           <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#942#957#0" expanded="true" />
+            <element signature="e#1036#1051#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -576,18 +545,18 @@
           <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#344#345#0" expanded="true" />
-            <element signature="e#371#372#0" expanded="true" />
-            <element signature="e#411#412#0" expanded="true" />
-            <element signature="e#443#444#0" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#503#504#0" expanded="true" />
-            <element signature="e#545#546#0" expanded="true" />
             <element signature="e#579#580#0" expanded="true" />
-            <element signature="e#608#609#0" expanded="true" />
-            <element signature="e#633#634#0" expanded="true" />
-            <element signature="e#669#670#0" expanded="true" />
-            <element signature="e#697#698#0" expanded="true" />
+            <element signature="e#611#612#0" expanded="true" />
+            <element signature="e#651#652#0" expanded="true" />
+            <element signature="e#683#684#0" expanded="true" />
+            <element signature="e#715#716#0" expanded="true" />
+            <element signature="e#748#749#0" expanded="true" />
+            <element signature="e#790#791#0" expanded="true" />
+            <element signature="e#824#825#0" expanded="true" />
+            <element signature="e#853#854#0" expanded="true" />
+            <element signature="e#878#879#0" expanded="true" />
+            <element signature="e#914#915#0" expanded="true" />
+            <element signature="e#942#943#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -598,8 +567,8 @@
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-            <element signature="e#590#591#0" expanded="true" />
+            <element signature="e#883#884#0" expanded="true" />
+            <element signature="e#958#959#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -620,7 +589,7 @@
           <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#942#957#0" expanded="true" />
+            <element signature="e#1036#1051#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -647,18 +616,18 @@
           <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#344#345#0" expanded="true" />
-            <element signature="e#371#372#0" expanded="true" />
-            <element signature="e#411#412#0" expanded="true" />
-            <element signature="e#443#444#0" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#503#504#0" expanded="true" />
-            <element signature="e#545#546#0" expanded="true" />
             <element signature="e#579#580#0" expanded="true" />
-            <element signature="e#608#609#0" expanded="true" />
-            <element signature="e#633#634#0" expanded="true" />
-            <element signature="e#669#670#0" expanded="true" />
-            <element signature="e#697#698#0" expanded="true" />
+            <element signature="e#611#612#0" expanded="true" />
+            <element signature="e#651#652#0" expanded="true" />
+            <element signature="e#683#684#0" expanded="true" />
+            <element signature="e#715#716#0" expanded="true" />
+            <element signature="e#748#749#0" expanded="true" />
+            <element signature="e#790#791#0" expanded="true" />
+            <element signature="e#824#825#0" expanded="true" />
+            <element signature="e#853#854#0" expanded="true" />
+            <element signature="e#878#879#0" expanded="true" />
+            <element signature="e#914#915#0" expanded="true" />
+            <element signature="e#942#943#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -669,8 +638,8 @@
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-            <element signature="e#590#591#0" expanded="true" />
+            <element signature="e#883#884#0" expanded="true" />
+            <element signature="e#958#959#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -692,7 +661,7 @@
           <caret line="17" column="1" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#942#957#0" expanded="true" />
+            <element signature="e#1036#1051#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -711,18 +680,18 @@
           <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#344#345#0" expanded="true" />
-            <element signature="e#371#372#0" expanded="true" />
-            <element signature="e#411#412#0" expanded="true" />
-            <element signature="e#443#444#0" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#503#504#0" expanded="true" />
-            <element signature="e#545#546#0" expanded="true" />
             <element signature="e#579#580#0" expanded="true" />
-            <element signature="e#608#609#0" expanded="true" />
-            <element signature="e#633#634#0" expanded="true" />
-            <element signature="e#669#670#0" expanded="true" />
-            <element signature="e#697#698#0" expanded="true" />
+            <element signature="e#611#612#0" expanded="true" />
+            <element signature="e#651#652#0" expanded="true" />
+            <element signature="e#683#684#0" expanded="true" />
+            <element signature="e#715#716#0" expanded="true" />
+            <element signature="e#748#749#0" expanded="true" />
+            <element signature="e#790#791#0" expanded="true" />
+            <element signature="e#824#825#0" expanded="true" />
+            <element signature="e#853#854#0" expanded="true" />
+            <element signature="e#878#879#0" expanded="true" />
+            <element signature="e#914#915#0" expanded="true" />
+            <element signature="e#942#943#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -733,8 +702,8 @@
           <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-            <element signature="e#590#591#0" expanded="true" />
+            <element signature="e#883#884#0" expanded="true" />
+            <element signature="e#958#959#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -793,18 +762,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/thirdpartyloginbackend/src/main/java/com/sullivandan/thirdpartyloginbackend/ThirdPartyLoginBackendApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-            <element signature="e#590#591#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/thirdpartyloginbackend/src/main/java/com/sullivandan/thirdpartyloginbackend/respository/UserMongoRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -821,47 +778,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/thirdpartyloginbackend/src/main/java/com/sullivandan/thirdpartyloginbackend/PersonalInformation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#344#345#0" expanded="true" />
-            <element signature="e#371#372#0" expanded="true" />
-            <element signature="e#411#412#0" expanded="true" />
-            <element signature="e#443#444#0" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#503#504#0" expanded="true" />
-            <element signature="e#545#546#0" expanded="true" />
-            <element signature="e#579#580#0" expanded="true" />
-            <element signature="e#608#609#0" expanded="true" />
-            <element signature="e#633#634#0" expanded="true" />
-            <element signature="e#669#670#0" expanded="true" />
-            <element signature="e#697#698#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thirdpartyloginbackend/src/main/java/com/sullivandan/thirdpartyloginbackend/ThirdPartyLoginBackendController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#942#957#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thirdpartyloginbackend/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="30" lean-forward="false" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/thirdpartyloginbackend/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="517">
@@ -870,12 +786,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/thirdpartyloginbackend/src/main/java/com/sullivandan/thirdpartyloginbackend/UserRepository.java">
+    <entry file="file://$PROJECT_DIR$/thirdpartyloginbackend/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thirdpartyloginbackend/src/main/java/com/sullivandan/thirdpartyloginbackend/ThirdPartyLoginBackendApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#883#884#0" expanded="true" />
+            <element signature="e#958#959#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thirdpartyloginbackend/src/main/java/com/sullivandan/thirdpartyloginbackend/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thirdpartyloginbackend/src/main/java/com/sullivandan/thirdpartyloginbackend/PersonalInformation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="19" column="7" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="19" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#579#580#0" expanded="true" />
+            <element signature="e#611#612#0" expanded="true" />
+            <element signature="e#651#652#0" expanded="true" />
+            <element signature="e#683#684#0" expanded="true" />
+            <element signature="e#715#716#0" expanded="true" />
+            <element signature="e#748#749#0" expanded="true" />
+            <element signature="e#790#791#0" expanded="true" />
+            <element signature="e#824#825#0" expanded="true" />
+            <element signature="e#853#854#0" expanded="true" />
+            <element signature="e#878#879#0" expanded="true" />
+            <element signature="e#914#915#0" expanded="true" />
+            <element signature="e#942#943#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thirdpartyloginbackend/src/main/java/com/sullivandan/thirdpartyloginbackend/ThirdPartyLoginBackendController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="42" column="38" lean-forward="false" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1036#1051#0" expanded="true" />
           </folding>
         </state>
       </provider>

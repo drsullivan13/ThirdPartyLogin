@@ -1,5 +1,7 @@
 package com.sullivandan.thirdpartyloginbackend;
 
+import org.springframework.context.annotation.Bean;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.stereotype.Component;
 
@@ -7,12 +9,18 @@ import org.springframework.stereotype.Component;
 @Document(collection = "users")
 public class PersonalInformation {
 
+    @Id
     private String id;
     private String name;
     private String email;
 
+//    public PersonalInformation(String name, String email){
+//        this.name = name;
+//        this.email = email;
+//    }
+
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public void setName(String name) {
@@ -20,7 +28,7 @@ public class PersonalInformation {
     }
 
     public String getEmail() {
-        return email;
+        return this.email;
     }
 
     public void setEmail(String email) {
